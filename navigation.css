@@ -1,0 +1,80 @@
+.navigation-section{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image:url(img/mount.jpg) ;
+    padding: 20px;
+    font-family: Verdana,  Tahoma, sans-serif;
+    color: black;
+   
+}
+.primary-menu{
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.primary-menu li{
+    font-family: Verdana,Tahoma, sans-serif;
+    padding-left: 20px; 
+    text-decoration: none;}
+.primary-menu a{
+   
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:black;
+    text-decoration: none;
+}
+
+.primary-menu a:hover{
+   
+    color:rgb(247, 144, 47);
+    
+}
+.btn{
+    display: inline-block;
+    font-size: medium;
+    background:white;
+    color:rgb(18, 20, 20);
+    border-radius: 10px;
+}
+ .btn:hover{
+     background:rgb(36, 187, 36);
+ 
+  }
+
+  .au p{
+      text-align: justify;
+  }
+  .submenu{
+      display: none;
+      text-align: center;
+  }
+  .container ul li:hover .submenu {
+    display: block;
+    background: rebeccapurple;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container ul li:hover .submenu ul li {
+     display: block ;
+     padding: 10px;
+}
+.contain{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #fff;
+    font-family: Verdana,'Segoe UI', Tahoma, sans-serif ;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2.5;
+    color: #454545;
+    text-align: justify;
+}
+input,select{
+     height: 25px;
+     border-radius: 20px;
+     
+}

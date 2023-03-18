@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Travel And Tour </title> 
+    <link rel="stylesheet" href="navigation.css"/>
+
+
+    
+</head>
+<body>
+    <div class="navigation-section">
+           <div class="container"> 
+              <h1> Travel and Tour </h1>
+               <h2 style="text-align-last: right;"> <i> travel with us beyond your limit..</i></h2> <hr>
+             <ul class="primary-menu">
+              <li> <a href="#hm">Home</a></li>
+                <li> <a href="#dest">Destination</a>
+                   <div class ="submenu">
+                     <ul><li> <a>Mustang </a></li>
+                     <li> <a>pokhara</a> </li>
+                     <li> <a>Rara </a>  </li> </ul>
+                   </div>
+                </li>
+                <li> <a href="#cn">Contact</a></li>
+                <li> <a href="#gl">Gallery</a></li>
+                <li> <a href="#au">About us</a></li>               
+            </ul>
+     </div> <!-- container-->
+    </div> <!-- navigation section-->
+    <div class="contain">
+           <div class="nextcontainer">
+          <h1>Explore with us </h1> 
+          <p>Exploration gives us the sense that anything is possible. Exploration leads to knowledge and understanding, and means that you make the world a better place as you explore. People have always tried to leave the world a better place for future generations.</p>
+          
+            <div>  <!-- form for boking-->
+              <form method="post">
+                <h2>One step to your destination</h2> 
+                <h2 style="text-align-last: center;"> <i> lets Explore the beauty together.</i></h2> <hr>
+                
+                <div> <b> Destination: </b> </div>
+                <select>  
+                  <option> Mustang</option>  
+                   <option>	pokhara </option>	
+                  <option>  Rara </option>  
+                   <option>	khaptad</option>	
+                    <option> Illam </option>	
+                 </select>
+                <div>Travel Package: </div> 
+                 <input type="radio"   value="solo" name="gender"/>Solo
+                 <input type="radio"   value="grp" name="gender" checked />Group
+
+                 <div> <b> Name: </b> </div>
+                  <input type="text" placeholder="client name " id="user"> 
+                 
+                 
+                <div> <b> Email </b> </div>
+                  <input type="email" placeholder="email address"   id="email">
+                <div> <b>Contact no: </b></div>
+                <select>  
+                  <option>	+977     </option>	
+               <option>	 +978    </option>	
+                <option>	  +979   </option>	
+               </select>
+                 <input type= "number"  placeholder="984** " name="contact number"/> 
+                <div><b> Date: </b></div> 
+                <input type="date"> 
+                <div> <b>further details and feed back </b></div>
+                <textarea rows="07" cols="30" wrap=""> </textarea>
+                <input type="submit" class="btn" onclick="validate();" value="Get in touch"> 
+              </form>
+             </div> <!-- form for boking--> 
+              <div>
+                <h1 style="text-align: center;"> Our Top Destination </h>
+                  <table align="center">
+                  
+                  <tr> 
+                  <td> Khaptad <img src="img/Khaptad.jpg" height ="250px" width="400" alt="khaptap">
+                    
+                   </td>
+                  <td>  Pokhara <img src="img/pokhara.jpg"  height ="250px" width="400" alt="Pokhara">
+                  
+                  <td> Mustang <img src="img/Mustang.jpg" height ="250px" width="400" alt="Mustang"> </td> </td>
+                  </tr>
+                  <tr> 
+                  <td> Rara <img src="img/rara.jpg"  height ="250px" width="400" alt="Rara"> </td>
+                  <td> Illam <img src="img/illam.jpg" height ="250px" width="400" alt="Illam"></td>
+                  <td> Badi Malika <img src="img/badimalika.jpg" height ="250px" width="400" alt="Badi Malika"></td>
+                  </tr>
+                  
+                  </table>
+              </div>
+             <div class="we">
+              <div id="au"> <h2> About Us</h2>
+                <h2>We are  Exploring </h2>
+                <p>On our trips you'll see a mix of famous sights and hidden gems that others miss, or don't even know about. As travellers, we want to experience a country, not merely observe it. We'll take you closer to the country, its culture and people, often in unscripted, spontaneous, impossible-to-replicate ways. You'll come home having seen and experienced the country in a way that other travellers might never have.</p>
+             </div>
+             </div>
+
+
+              <div>
+                 <h1 id="cn"> Contact</h1>
+                 <p>Main office: kathamandu , mid baneshwor </br>
+                 phone number: 9812345678 </br>
+                 email: travelwithus@gmail.com </br>
+                 Facebook: www.facebbook.com/travelwithus
+                 </p>
+              </div>
+        </div> <!-- nextcontainer-->
+     </div> <!-- introduction-section-->
+     <script type="text/javascript">
+      function validate()
+      {
+      var a=document.getElementById('user').value;
+      
+      var b=document.getElementById('email').value;
+      
+      var isSuccess=1;
+      //Patter for email
+      var emailPattern=/^[a-z]\S+\@\S+\.\S+/;
+      var checkEmail=emailPattern.test(b);
+      if(a==''||b=='')
+      {
+      alert("Fields Cant be Empty");
+      isSuccess=0;
+      }
+      if(checkEmail!=true)
+      {
+      alert("Enter the valid email pattern");
+      isSuccess=0;
+      }
+      if(isSuccess==1)
+      {
+      alert("Successfully submmited");
+      }
+      }
+      </script>
+</body>
+</html>
